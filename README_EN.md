@@ -180,3 +180,21 @@ function processOrder(order) {
 ```
  
 ---
+### 2. Concept Glossary
+ 
+| Term | Definition |
+|------|------------|
+| **Clean Code** | Code written to be read by humans — clear, simple, no surprises |
+| **Naming** | The practice of choosing names that reveal intent without needing comments |
+| **Single Responsibility** | Principle that each function/module should have only one reason to change |
+| **Side Effect** | When a function modifies external state beyond returning a value |
+| **Early Return** | Technique of returning early in functions to avoid unnecessary nesting |
+| **Refactoring** | Rewriting existing code to improve readability without changing behavior |
+| **Magic Number** | A literal number in code with no name or context — should be replaced with a named constant |
+| **DRY (Don't Repeat Yourself)** | Principle of avoiding logic duplication — extract repeated code into reusable functions |
+| **KISS (Keep It Simple)** | Prefer the simplest solution that works — unnecessary complexity is a potential bug |
+| **Linter** | A tool (e.g. ESLint) that automatically analyzes code for style issues and errors |
+| **Prettier** | A code formatter that standardizes indentation, quotes, commas, etc. automatically |
+| **Code Smell** | A signal in the code that indicates a potential design problem, even if the code works |
+ 
+---
