@@ -57,7 +57,6 @@ Com base nas fontes do caderno, quais são os principais princípios de Clean Co
 **Aprendizado:** Especificar "com base nas fontes" e "aplicado a JavaScript" muda completamente a qualidade da resposta.
  
 ---
- 
 ### Rodada 2 - Nomeação de variáveis
  
 **Prompt:**
@@ -73,5 +72,15 @@ Me dê 5 exemplos reais de nomes de variáveis ruins em JS e como reescrevê-los
 ```
  
 **Resultado:** A IA também apresebtou exemplos de nomenclatura, regras e formatação, além disso, adicionou um formato de antes/depois muito útil para revisão.
+ 
+---
+### Rodada 3 - Comentários no código
+ 
+**Prompt:**
+```
+Quando devo e quando NÃO devo comentar meu código JavaScript? O que as fontes dizem sobre isso?
+```
+ 
+**Resultado:** A resposta trouxe a distinção entre comentários que explicam o quê (desnecessários se o código for claro) vs. comentários que explicam por quê (válidos quando o contexto não é óbvio).
  
 ---
