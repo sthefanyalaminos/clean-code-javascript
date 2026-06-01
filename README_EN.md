@@ -94,3 +94,26 @@ Based on everything we discussed, create a list of questions I can use to review
 **Result:** Generated over 10 review questions. The best ones were used in the reusable prompts section below.
  
 ---
+## Study Mini-Guide
+ 
+### 1. Structured Summaries
+ 
+#### Naming (Variables and Functions)
+ 
+- Use names that **reveal intent**. If you need a comment to explain the name, the name is wrong.
+- Boolean variables should start with `is`, `has`, `can` → `isActive`, `hasPermission`
+- Avoid obscure abbreviations: `usr` → `user`, `calc` → `calculateTotal`
+- Functions should use **verb names**: `getUser()`, `sendEmail()`, `validateInput()`
+```js
+// ❌ Bad
+const d = new Date();
+const u = getU();
+function proc(x) { ... }
+ 
+// ✅ Good
+const currentDate = new Date();
+const activeUser = getActiveUser();
+function processPayment(order) { ... }
+```
+ 
+---
