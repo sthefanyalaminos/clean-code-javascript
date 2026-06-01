@@ -227,3 +227,5 @@ Refatoração Guiada
 ```
  
 ---
+## Autoria
+Desenvolvido por Sthefany Alaminos, durante o Bootcamp CI&T – Do Prompt ao Agente, realizado pela DIO.
