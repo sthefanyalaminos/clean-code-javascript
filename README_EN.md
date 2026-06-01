@@ -57,3 +57,40 @@ Based on the notebook sources, what are the main Clean Code principles applied s
 **Lesson learned:** Specifying "based on the sources" and "applied to JavaScript" completely changes the quality of the response.
  
 ---
+### Round 2 - Variable naming
+ 
+**Prompt:**
+```
+What are the best practices for naming variables and functions in JavaScript according to the sources?
+```
+ 
+**Result:** A solid response with naming examples, rules, and formatting conventions.
+ 
+**Variation tested:**
+```
+Give me 5 real examples of bad variable names in JS and how to rewrite them using Clean Code.
+```
+ 
+**Result:** The AI also covered naming rules and conventions, and added a before/after format that is very useful for review.
+ 
+---
+### Round 3 - Code comments
+ 
+**Prompt:**
+```
+When should and shouldn't I comment my JavaScript code? What do the sources say about this?
+```
+ 
+**Result:** The response drew a clear distinction between comments that explain *what* (unnecessary when the code is clear) vs. comments that explain *why* (valid when the context isn't obvious).
+ 
+---
+### Round 4 - Prompts for future review
+ 
+**Prompt:**
+```
+Based on everything we discussed, create a list of questions I can use to review Clean Code in JavaScript in the future.
+```
+ 
+**Result:** Generated over 10 review questions. The best ones were used in the reusable prompts section below.
+ 
+---
