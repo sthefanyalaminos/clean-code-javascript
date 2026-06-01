@@ -5,3 +5,9 @@ Exploring AI as an active learning tool: source curation, prompt engineering, an
 <div align="right"> 
 <a href="https://notebooklm.google.com/notebook/0ad614a6-a63c-4813-81f5-11412e79173c">Click here to access the notebook!</a>
 </div>
+
+## Context and Objectives
+ 
+### Why Clean Code in JavaScript?
+ 
+JavaScript is one of the most widely used languages in the world — and for that very reason, it's also one of the most commonly written in a messy way. When starting out, it's natural to focus on making code work, but it's equally necessary to learn how to make it communicate.
