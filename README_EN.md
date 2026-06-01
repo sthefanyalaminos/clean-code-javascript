@@ -117,3 +117,38 @@ function processPayment(order) { ... }
 ```
  
 ---
+#### Functions
+ 
+- **One function, one responsibility.** If you need "and" to describe what it does, it does too much.
+- Prefer **fewer parameters**: more than 3 is a warning sign. Use a configuration object instead.
+- Avoid undeclared **side effects**: functions shouldn't modify external variables without making it obvious.
+- Prefer **returning values** over directly modifying state.
+```js
+// ❌ Bad — does two things and has a side effect
+function saveAndNotify(user) {
+  db.save(user);
+  sendEmailNotification(user.email);
+}
+ 
+// ✅ Good — separated responsibilities
+function saveUser(user) { return db.save(user); }
+function notifyUser(email) { return sendEmailNotification(email); }
+```
+ 
+---
+#### Comments
+ 
+- **Good code explains itself.** A comment is not a substitute for a bad name.
+- Comment the **why**, not the **what**.
+- Remove outdated comments — they're worse than no comment at all.
+- TODO comments are acceptable while learning, but not in production without a planned resolution.
+```js
+// ❌ Bad — the comment just repeats the code
+let age = 25; // sets age to 25
+ 
+// ✅ Good — the comment explains a non-obvious decision
+// Using index 1 because the API returns 1-based, not 0-based
+const firstItem = items[1];
+```
+ 
+---
