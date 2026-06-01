@@ -152,3 +152,31 @@ const firstItem = items[1];
 ```
  
 ---
+#### Structure and Formatting
+ 
+- Use **ESLint** and **Prettier** to automate consistency.
+- Keep **lines short** (max ~80–100 characters).
+- Group related code together; separate groups with a blank line.
+- Avoid deep nesting (more than 2–3 levels of `if`/`for`): use **early return** or function extraction.
+```js
+// ❌ Bad — deep nesting
+function processOrder(order) {
+  if (order) {
+    if (order.items.length > 0) {
+      if (order.isPaid) {
+        // process
+      }
+    }
+  }
+}
+ 
+// ✅ Good — early return
+function processOrder(order) {
+  if (!order) return;
+  if (order.items.length === 0) return;
+  if (!order.isPaid) return;
+  // process
+}
+```
+ 
+---
