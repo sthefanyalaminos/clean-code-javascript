@@ -20,3 +20,23 @@ JavaScript é uma das linguagens mais usadas no mundo, justamente por isso, é t
 - Construir um **glossário pessoal** dos conceitos mais relevantes;
 - Criar uma **biblioteca de prompts** reutilizáveis para revisão futura via IA.
 ---
+
+## Curadoria de Fontes
+ 
+As fontes abaixo foram selecionadas como as mais importantes por serem abertas, confiáveis e complementares entre si. Todas foram inseridas no NotebookLM para embasar as respostas geradas.
+ 
+| # | Título | Tipo | Link |
+|---|--------|------|------|
+| 1 | **Clean Code JavaScript** — ryanmcdermott | Repositório GitHub (texto) | [github.com/ryanmcdermott/clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) |
+| 2 | **Eloquent JavaScript** — Cap. 4 e 5 (Funções e Estruturas) | Livro aberto (online) | [eloquentjavascript.net](https://eloquentjavascript.net/) |
+| 3 | **MDN Web Docs — JavaScript Guide** | Documentação oficial | [developer.mozilla.org/en-US/docs/Web/JavaScript/Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) |
+| 4 | **Refactoring Guru — Refactoring em JS** | Artigos técnicos | [refactoring.guru/refactoring](https://refactoring.guru/refactoring) |
+| 5 | **Google JavaScript Style Guide** | Guia de estilo oficial | [google.github.io/styleguide/jsguide.html](https://google.github.io/styleguide/jsguide.html) |
+ 
+---
+ 
+## Engenharia de Prompts & Cicatrizes
+ 
+Esta seção documenta o processo real de exploração do NotebookLM, incluindo o que funcionou, o que não funcionou e como os prompts foram ajustados.
+ 
+---
