@@ -226,3 +226,5 @@ Comment Review
 ```
  
 ---
+## Authorship
+Developed by Sthefany Alaminos during the CI&T Bootcamp – From Prompt to Agent, hosted by DIO.
