@@ -34,3 +34,26 @@ The sources below were selected for being open, reliable, and complementary. All
 | 5 | **Google JavaScript Style Guide** | Official style guide | [google.github.io/styleguide/jsguide.html](https://google.github.io/styleguide/jsguide.html) |
  
 ---
+## Prompt Engineering & Lessons Learned
+ 
+This section documents the real exploration process inside NotebookLM — what worked, what didn't, and how prompts were adjusted along the way.
+ 
+### Round 1 - Starting point
+ 
+**Initial prompt:**
+```
+What is Clean Code?
+```
+ 
+**Problem:** The response was too broad. Even though it was grounded in the sources, the concepts weren't explored in depth.
+ 
+**Adjustment:**
+```
+Based on the notebook sources, what are the main Clean Code principles applied specifically to JavaScript?
+```
+ 
+**Result:** The AI listed principles with direct references to the sources and went deeper into each one, including code examples.
+ 
+**Lesson learned:** Specifying "based on the sources" and "applied to JavaScript" completely changes the quality of the response.
+ 
+---
