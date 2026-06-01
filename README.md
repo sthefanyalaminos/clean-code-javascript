@@ -1,4 +1,6 @@
 # Clean Code JavaScript — Caderno Temático com NotebookLM
+
+[Translate to English](https://github.com/sthefanyalaminos/clean-code-javascript/blob/main/README_EN.md)
    
 > Explorando IA como ferramenta de aprendizagem ativa: curadoria, engenharia de prompts e construção de um miniguia de estudos sobre boas práticas em JavaScript.
  
