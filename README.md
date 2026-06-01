@@ -12,4 +12,11 @@
  
 JavaScript é uma das linguagens mais usadas no mundo, justamente por isso, é também uma das mais "bagunçadas" na prática. Para quem está começando, é natural se preocupar com aprender a fazer o código funcionar, mas também é necessário aprender a fazê-lo comunicar.
  
+### Objetivos de Estudo
  
+- Compreender os **princípios fundamentais** de código limpo aplicados ao JavaScript;
+- Aprender a **nomear variáveis e funções** de forma semântica e intencional;
+- Entender quando e como **refatorar** código funcional, mas difícil de manter;
+- Construir um **glossário pessoal** dos conceitos mais relevantes;
+- Criar uma **biblioteca de prompts** reutilizáveis para revisão futura via IA.
+---
