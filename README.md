@@ -94,7 +94,7 @@ Com base em tudo que discutimos, crie uma lista de perguntas que eu possa usar p
 **Resultado:** Gerou mais de 10 perguntas para revisão. Usei as melhores na seção de prompts reutilizáveis abaixo.
  
 ---
-## 📖 Miniguia de Estudo — Entrega Final
+## 📖 Miniguia de Estudo
  
 ### 1. Resumos Estruturados
  
@@ -134,6 +134,50 @@ function saveAndNotify(user) {
 // ✅ Bom — responsabilidades separadas
 function saveUser(user) { return db.save(user); }
 function notifyUser(email) { return sendEmailNotification(email); }
+```
+ 
+---
+#### Comentários
+ 
+- **Bom código se explica.** Comentário não substitui nome ruim.
+- Comente o **porquê**, não o **o quê**.
+- Remova comentários desatualizados — são piores que nenhum comentário.
+- Comentários TODO são aceitáveis em contexto de aprendizado, mas não em produção sem resolução prevista.
+```js
+// ❌ Ruim — o comentário repete o código
+let age = 25; // define a idade como 25
+ 
+// ✅ Bom — o comentário explica uma decisão não óbvia
+// Usamos índice 1 porque a API retorna com base 1, não 0
+const firstItem = items[1];
+```
+ 
+---
+#### Estrutura e Formatação
+ 
+- Use **ESLint** e **Prettier** para automatizar consistência.
+- Mantenha **linhas curtas** (máximo ~80-100 caracteres).
+- Agrupe código relacionado; separe grupos com uma linha em branco.
+- Evite aninhamento profundo (mais de 2-3 níveis de `if`/`for`): use **early return** ou extração de funções.
+```js
+// ❌ Ruim — aninhamento profundo
+function processOrder(order) {
+  if (order) {
+    if (order.items.length > 0) {
+      if (order.isPaid) {
+        // processa
+      }
+    }
+  }
+}
+ 
+// ✅ Bom — early return
+function processOrder(order) {
+  if (!order) return;
+  if (order.items.length === 0) return;
+  if (!order.isPaid) return;
+  // processa
+}
 ```
  
 ---
