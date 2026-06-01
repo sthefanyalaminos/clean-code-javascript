@@ -181,3 +181,21 @@ function processOrder(order) {
 ```
  
 ---
+### 2. Glossário de Conceitos
+ 
+| Termo | Definição |
+|-------|-----------|
+| **Clean Code** | Código escrito para ser lido por humanos. Claro, simples, sem surpresas |
+| **Naming** | Prática de escolher nomes que revelam intenção sem necessidade de comentários |
+| **Single Responsibility** | Princípio de que cada função/módulo deve ter apenas uma razão para mudar |
+| **Side Effect** | Efeito colateral: quando uma função modifica estado externo além de retornar um valor |
+| **Early Return** | Técnica de retornar cedo em funções para evitar aninhamento desnecessário |
+| **Refactoring** | Processo de reescrever código existente para melhorar legibilidade sem alterar comportamento |
+| **Magic Number** | Número literal no código sem nome ou contexto, deve ser substituído por constante nomeada |
+| **DRY (Don't Repeat Yourself)** | Princípio de evitar duplicação de lógica, extraia código repetido em funções reutilizáveis |
+| **KISS (Keep It Simple)** | Prefira a solução mais simples que funcione, complexidade desnecessária é um bug em potencial |
+| **Linter** | Ferramenta (ex: ESLint) que analisa o código automaticamente em busca de problemas de estilo e erros |
+| **Prettier** | Formatador de código que padroniza indentação, aspas, vírgulas etc. automaticamente |
+| **Code Smell** | Sinal no código que indica um problema potencial de design, mesmo que o código funcione |
+ 
+---
