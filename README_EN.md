@@ -198,3 +198,31 @@ function processOrder(order) {
 | **Code Smell** | A signal in the code that indicates a potential design problem, even if the code works |
  
 ---
+### 3. Reusable Prompts for Future Review
+ 
+Use these prompts in NotebookLM (or any AI) to revisit the topic:
+ 
+```
+General Review
+"What are the 5 most important Clean Code principles in JavaScript? Give a bad and good code example for each."
+ 
+Code Self-Assessment
+"Analyze this JavaScript snippet and point out what violates Clean Code principles: [code]"
+ 
+Naming
+"I have the following variables/functions: [list]. Suggest more semantic names and explain why."
+ 
+Functions
+"Does this function do more than one thing? How could I break it into smaller functions with single responsibilities? [function]"
+ 
+Guided Refactoring
+"Refactor this code to eliminate nesting using early return, keeping the same behavior: [code]"
+ 
+Quick Glossary
+"In one sentence each: what are Magic Numbers, DRY, Side Effects, and Code Smells?"
+ 
+Comment Review
+"Does this code need comments? What should be renamed to make the comments unnecessary? [code]"
+```
+ 
+---
