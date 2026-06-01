@@ -84,3 +84,56 @@ Quando devo e quando NÃO devo comentar meu código JavaScript? O que as fontes 
 **Resultado:** A resposta trouxe a distinção entre comentários que explicam o quê (desnecessários se o código for claro) vs. comentários que explicam por quê (válidos quando o contexto não é óbvio).
  
 ---
+### Rodada 5 - Prompts para revisão futura
+ 
+**Prompt:**
+```
+Com base em tudo que discutimos, crie uma lista de perguntas que eu possa usar para revisar Clean Code em JavaScript no futuro.
+```
+ 
+**Resultado:** Gerou mais de 10 perguntas para revisão. Usei as melhores na seção de prompts reutilizáveis abaixo.
+ 
+---
+## 📖 Miniguia de Estudo — Entrega Final
+ 
+### 1. Resumos Estruturados
+ 
+#### Nomeação (Variáveis e Funções)
+ 
+- Use nomes que **revelam intenção**. Se você precisa de um comentário para explicar o nome, o nome está errado.
+- Variáveis booleanas devem começar com `is`, `has`, `can` → `isActive`, `hasPermission`
+- Evite abreviações obscuras: `usr` → `user`, `calc` → `calculateTotal`
+- Funções devem ter nomes de **verbos**: `getUser()`, `sendEmail()`, `validateInput()`
+```js
+// ❌ Ruim
+const d = new Date();
+const u = getU();
+function proc(x) { ... }
+ 
+// ✅ Bom
+const currentDate = new Date();
+const activeUser = getActiveUser();
+function processPayment(order) { ... }
+```
+ 
+---
+
+#### Funções
+ 
+- **Uma função, uma responsabilidade.** Se você precisa de "e" para descrever o que ela faz, ela faz coisas demais.
+- Prefira **menos parâmetros**: mais de 3 parâmetros é um sinal de alerta. Use um objeto de configuração.
+- Evite **efeitos colaterais** não declarados: funções não devem modificar variáveis externas sem que isso fique evidente.
+- Prefira **retornar valores** a modificar estado direto.
+```js
+// ❌ Ruim — faz duas coisas e tem efeito colateral
+function saveAndNotify(user) {
+  db.save(user);
+  sendEmailNotification(user.email);
+}
+ 
+// ✅ Bom — responsabilidades separadas
+function saveUser(user) { return db.save(user); }
+function notifyUser(email) { return sendEmailNotification(email); }
+```
+ 
+---
