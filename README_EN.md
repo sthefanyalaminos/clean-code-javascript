@@ -11,3 +11,12 @@ Exploring AI as an active learning tool: source curation, prompt engineering, an
 ### Why Clean Code in JavaScript?
  
 JavaScript is one of the most widely used languages in the world — and for that very reason, it's also one of the most commonly written in a messy way. When starting out, it's natural to focus on making code work, but it's equally necessary to learn how to make it communicate.
+
+### Study Goals
+ 
+- Understand the **core principles** of clean code applied to JavaScript;
+- Learn to **name variables and functions** semantically and intentionally;
+- Know when and how to **refactor** code that works but is hard to maintain;
+- Build a **personal glossary** of the most relevant concepts;
+- Create a **reusable prompt library** for future AI-assisted review.
+---
